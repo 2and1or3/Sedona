@@ -3,9 +3,11 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona каталог</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/sedona_style.css" rel="stylesheet">
 </head>
 <body>
-  <header class="header-page">
+  <header class="header-page header-catalog-page">
     <a href="sedona_index.html">
       <img src="img/logo.svg" alt="Логотип Седона" width="140" height="71">
     </a>
@@ -14,7 +16,7 @@
         <li class="navigation-item"><a href="info.html">Информация</a></li>
         <li class="navigation-item"><a href="media.html">Фото и видео</a></li>
         <li class="navigation-item"><a href="map.html">Карта штата</a></li>
-        <li class="navigation-item"><a href="">Гостиницы</a></li>
+        <li class="navigation-item current-page"><a href="">Гостиницы</a></li>
       </ul>
     </nav>
   </header>
@@ -89,14 +91,14 @@
             <button class="max-circle" aria-label="Максимальная цена"></button>
           </div>
         </fieldset>
-        <button type="submit">Показать</button>
+        <button class="filter-button" type="submit">Показать</button>
       </form>
     </section>
     <section class="sort">
       <span class="sort-result">Найдено:3</span>
       <h2 class="sort-title">Сортировка</h2>
       <ul class="sort-list">
-        <li class="sort-item"><a href="">По&nbsp;цене</a></li>
+        <li class="sort-item sort-item-current"><a href="">По&nbsp;цене</a></li>
         <li class="sort-item"><a href="">По&nbsp;типу</a></li>
         <li class="sort-item"><a href="">По&nbsp;рейтингу</a></li>
       </ul>
@@ -114,8 +116,8 @@
           <p class="hotel-info">
             <span class="hotel-type">Гостиница</span>
             <span class="hotel-price">От&nbsp;4000&nbsp;р.</span>
-            <a class="button more-info" href="more-info.html">Подробнее</a>
-            <a class="button book" href="cart.html">Забронировать</a>
+            <a class="button button-more-info" href="more-info.html">Подробнее</a>
+            <a class="button button-book" href="cart.html">Забронировать</a>
           </p>
           <ul class="quantity-star" aria-label="4 звезды">
             <li class="star"><img src="img/star.svg" width="18" height="17" alt=""></li>
@@ -131,8 +133,8 @@
           <p class="hotel-info">
             <span class="hotel-type">Мотель</span>
             <span class="hotel-price">От&nbsp;3000&nbsp;р.</span>
-            <a class="button more-info" href="more-info.html">Подробнее</a>
-            <a class="button book" href="cart.html">Забронировать</a>
+            <a class="button button-more-info" href="more-info.html">Подробнее</a>
+            <a class="button button-book" href="cart.html">Забронировать</a>
           </p>
           <ul class="quantity-star" aria-label="3 звезды">
             <li class="star"><img src="img/star.svg" width="18" height="17" alt=""></li>
@@ -147,8 +149,8 @@
           <p class="hotel-info">
             <span class="hotel-type">Апартаменты</span>
             <span class="hotel-price">От&nbsp;2000&nbsp;р.</span>
-            <a class="button more-info" href="more-info.html">Подробнее</a>
-            <a class="button book" href="cart.html">Забронировать</a>
+            <a class="button button-more-info" href="more-info.html">Подробнее</a>
+            <a class="button button-book" href="cart.html">Забронировать</a>
           </p>
           <ul class="quantity-star" aria-label="2 звезды">
             <li class="star"><img src="img/star.svg" width="18" height="17" alt=""></li>
@@ -159,7 +161,7 @@
       </ul>
     </section>
   </main>
-  <footer class="main-footer">
+  <footer class="main-footer footer-catalog">
     <p class="hash-sedona">#visitSEDONA</p>
     <ul class="social-list">
       <li class="social-item"><a href="tw.com">Twitter</a></li><!-- Вставить tw-icon.svg -->

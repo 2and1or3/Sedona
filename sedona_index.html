@@ -3,6 +3,8 @@
 <head>
   <meta charset="utf-8">
   <title>Sedona главная</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/sedona_style.css" rel="stylesheet">
 </head>
 <body>
   <header class="header-page">
@@ -17,11 +19,8 @@
         <li class="navigation-item"><a href="sedona_catalog.html">Гостиницы</a></li>
       </ul>
     </nav>
-  </header>
-  <main class="main-page">
     <section class="promo">
       <h1 class="visually-hidden">Главная страница сайта Седона</h1>
-      <img src="img/welcome.svg" width="459" height="353" alt="Добро пожаловать в Седону!">
       <p class="promo-lead">
         Седона&nbsp;&mdash; небольшой городок в&nbsp;Аризоне,
         заслуживающий большего!
@@ -30,6 +29,8 @@
         Рассмотрим 5&nbsp;причин, по&nbsp;которым Седона круче, чем гранд каньон!
       </p>
     </section>
+  </header>
+  <main class="main-page">
     <section class="features">
       <h2 class="visually-hidden">Преимущества Седоны</h2>
       <ul class="features-list">
@@ -82,8 +83,8 @@
           <h3 class="feature-title">
             Небольшая площадь
           </h3>
-          <span class="feature-number">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</span>
-          <span class="feature-text">
+          <span class="feature-number grey-text">&mdash;&nbsp;&#8470;&nbsp;3 &mdash;</span>
+          <span class="feature-text grey-text">
             Все достопримечательности
             находятся очень близко
           </span>
@@ -92,8 +93,8 @@
           <h3 class="feature-title">
             Красивая дорога
           </h3>
-          <span class="feature-number">&mdash;&nbsp;&#8470;&nbsp;4 &mdash;</span>
-          <span class="feature-text">
+          <span class="feature-number grey-text">&mdash;&nbsp;&#8470;&nbsp;4 &mdash;</span>
+          <span class="feature-text grey-text">
             Ехать в&nbsp;Седону из&nbsp;Лас-Вегаса совсем не&nbsp;скучно!
           </span>
         </li>
@@ -101,8 +102,8 @@
           <h3 class="feature-title">
             Мало туристов
           </h3>
-          <span class="feature-number">&mdash;&nbsp;&#8470;&nbsp;5 &mdash;</span>
-          <span class="feature-text">
+          <span class="feature-number grey-text">&mdash;&nbsp;&#8470;&nbsp;5 &mdash;</span>
+          <span class="feature-text grey-text">
             Большинство едет в&nbsp;гранд каньон и&nbsp;толпится там
           </span>
         </li>
@@ -112,7 +113,7 @@
       <h2 class="visually-hidden">Форма поиска гостиницы</h2>
       <p class="form-lead">
         <span class="form-title">Заинтересовались?</span>
-        <span class="form-CTA">
+        <span class="form-cta">
           Укажите предполагаемые даты поездки,
           и&nbsp;мы&nbsp;покажем вам лучшие предложения гостиниц в&nbsp;седоне
         </span>
@@ -144,25 +145,27 @@
             <input class="child-in" type="number" name="child-in" value="0">
             <button class="more" type="button">+</button>
           </fieldset>
-          <button type="submit">Найти</button>
+          <button class="form-button" type="submit">Найти</button>
         </form>
       </article>
-      <img src="img/map.png" width="1200" height="593" alt="Карта окрестностей Седоны">
     </section>
   </main>
   <footer class="main-footer">
-    <p class="hash-sedona">#visitSEDONA</p>
-    <ul class="social-list">
-      <li class="social-item"><a href="tw.com">Twitter</a></li><!-- Вставить tw-icon.svg -->
-      <li class="social-item"><a href="fb.com">FaceBook</a></li><!-- Вставить fb-icon.svg-->
-      <li class="social-item"><a href="yt.com">YouTube</a></li><!-- Вставить youtube-icon.svg-->
-    </ul>
-    <p class="author">
-      <span>Website by</span>
-      <a href="https://htmlacademy.ru/intensive/htmlcss">
-        <img src="img/logo-htmla.svg" alt="Логотип ХТМЛ Академии" width="115" height="41">
-      </a>
-    </p>
+    <img class="footer-map" src="img/map.png" width="1200" height="593" alt="Карта окрестностей Седоны">
+    <div class="footer-back">
+      <p class="hash-sedona">#visitSEDONA</p>
+      <ul class="social-list">
+        <li class="social-item"><a href="tw.com">Twitter</a></li><!-- Вставить tw-icon.svg -->
+        <li class="social-item"><a href="fb.com">FaceBook</a></li><!-- Вставить fb-icon.svg-->
+        <li class="social-item"><a href="yt.com">YouTube</a></li><!-- Вставить youtube-icon.svg-->
+      </ul>
+      <p class="author">
+        <span>Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="img/logo-htmla.svg" alt="Логотип ХТМЛ Академии" width="115" height="41">
+        </a>
+      </p>
+    </div>
   </footer>
 </body>
 </html>
